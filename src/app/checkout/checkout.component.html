@@ -1,0 +1,27 @@
+<h2>Confirmer la Commande</h2>
+<form (ngSubmit)="confirmOrder()">
+  <div class="form-group">
+    <label for="firstName">Prénom</label>
+    <input type="text" id="firstName" [(ngModel)]="firstName" name="firstName" required>
+  </div>
+  <div class="form-group">
+    <label for="lastName">Nom</label>
+    <input type="text" id="lastName" [(ngModel)]="lastName" name="lastName" required>
+  </div>
+  <div class="form-group">
+    <label for="address">Adresse</label>
+    <input type="text" id="address" [(ngModel)]="address" name="address" required>
+  </div>
+  <div class="form-group">
+    <label for="phone">Numéro de Téléphone</label>
+    <input type="text" id="phone" [(ngModel)]="phone" name="phone" required>
+  </div>
+  <div class="form-group"> 
+    <label for="email">Adresse E-mail</label> 
+    <input type="email" id="email" [(ngModel)]="email" name="email" required> 
+    </div> 
+
+    <button type="submit" (click)="confirmOrder()">Commande Confirmé</button>
+
+</form>
+

@@ -1,0 +1,109 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #a0467f;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 800px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-container {
+  padding: 20px;
+  width: 50%;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  background-color: rgb(198, 50, 153);
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+.input-field {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-field i {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  color: #93254c;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+  border: 1px solid #93254c;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up-button {
+  background-color: #a72848;
+  color: white;
+}
+
+.sign-in-button {
+  background-color: #e0065d;
+  color: white;
+}
+
+button:hover {
+  background-color: #800030;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.icon:hover {
+  color: #e374af;
+  border: 2px solid #333;
+}
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+  color: #01070d;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}

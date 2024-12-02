@@ -1,0 +1,145 @@
+.header-container {
+  max-width: 7xl;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 1px solid #f19cb7;
+  border-right: 1px solid #f19cb7;
+  position:relative;
+  z-index: 10;
+
+  .store-name {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(48, 1, 31);
+    text-decoration: none;
+
+    &:hover {
+      color: #914a82; 
+    }
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+  .camion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px; 
+    color: #190110; 
+  
+    i {
+      font-size: 1.2rem; 
+      color: #1f0314; 
+      margin-right: 10px; 
+    }
+  
+    h2 {
+      font-size: 1.2rem; 
+      margin: 0;
+    }
+  }
+  
+
+  
+
+
+  .search-form {
+    display: flex;
+    align-items: center;
+
+    .search-input {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
+
+    .search-button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: #cb2e75;
+      color: rgb(71, 2, 41);
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #da8aba;
+      }
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+
+    .products-link {
+      cursor: pointer;
+      font-weight: bold;
+      color: rgb(117, 40, 73);
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: rgba(225, 112, 183, 0.2);
+      }
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgb(187, 77, 112);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+
+      a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #dc9ecd;
+        }
+      }
+    }
+
+    &:hover .dropdown-content {
+      display: block;
+    }
+  }
+
+  .login-link {
+    margin-left: 16px;
+    color: rgb(231, 32, 115);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: rgba(225, 112, 183, 0.2);
+    }
+  }
+
+  button {
+    margin-left: 16px;
+    color: rgb(169, 55, 85);
+  }
+  .cart-link{
+    &:hover {
+      background-color: rgba(251, 242, 248, 0.2);
+    }
+
+  }
+}

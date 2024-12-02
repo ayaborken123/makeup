@@ -1,0 +1,17 @@
+<div class="product-list">
+  
+  <div *ngIf="product">
+      <img [src]="product.image" alt="{{ product.name }}" class="product-image">
+      <div class="product-info">
+        <h3>{{ product.name }}</h3>
+        <p class="product-title">{{ product.title }}</p>
+        <p class="product-price">{{ product.price | currency }}
+          <span [ngClass]="{'available': product.availability, 'unavailable': !product.availability}"> 
+            {{ product.availability ? 'Disponible' : 'Indisponible' }} 
+          </span>
+        </p>
+      </div>
+      <button (click)="addToCart(product)" [disabled]="!product.availability">Add to Cart</button>
+    </div>
+  </div>
+  

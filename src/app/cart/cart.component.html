@@ -1,0 +1,21 @@
+<div *ngIf="items.length === 0">
+  <div class="empty-cart">
+    <i class="bi bi-cart-x"></i>
+    <h2><strong>Votre panier est vide</strong></h2>
+  </div>
+  
+  </div>
+  <div *ngIf="items.length > 0">
+    <h2>Votre Panier</h2>
+    <ul class="cart-items">
+      <li *ngFor="let item of items" class="cart-item">
+        <img [src]="item.image" alt="{{ item.name }}">
+        <div class="item-details">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+        </div>
+      </li>
+    </ul>
+    <button (click)="proceedToCheckout()">Passer à la Caisse</button>
+  </div>
+  

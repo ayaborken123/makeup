@@ -1,0 +1,19 @@
+<div class="product-container">
+    <section class="card-grid">
+      <div *ngFor="let product of products" (click)="selectProduct(product.id)" class="card">
+        <img [src]="product.image" alt="{{ product.name }}">
+        <h1>{{ product.name }}</h1>
+        <div *ngIf="selectedProduct === product.id" class="description">
+          <p class="product-price">{{ product.price | currency }}
+            <span [ngClass]="{'available': product.availability, 'unavailable': !product.availability}"> 
+              {{ product.availability ? 'Disponible' : 'Indisponible' }} 
+            </span>
+          </p>
+          <p>{{ product.description }}</p>
+          <button (click)="addToCart(product)" [disabled]="!product.availability">Add to Cart</button>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  
